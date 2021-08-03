@@ -16,16 +16,35 @@
  */
 // 1
 
+var charaterName: String = "Duong Hoang Viet"
+var weaponClassification: String = "Sword"
+
 // 2
+
+charaterName += " DHV10"
 
 // 3
 
+var currentMana: Double = 90.0
+
 // 4
 
+var manaPercentage = currentMana/100
+
+
 // 5
+var debugStats: String = "\(charaterName) \n \(weaponClassification) \n \(String("\(manaPercentage*100)%"))  "
 
 // 6
 
+var questAccepted: Bool = true
+var canQuest: Bool = false
+
 // 7
 
+var questStatus = questAccepted && canQuest
+
+
 // 8
+
+print("\(debugStats) \(String(questStatus))")
